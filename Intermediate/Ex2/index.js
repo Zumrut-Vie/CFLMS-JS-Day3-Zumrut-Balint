@@ -27,10 +27,14 @@ const CalculateSumAndAvaerage = (event) => {
 
     /* We call here out helper function to generate the DOM elements */
     generateDOM(sum, average)
+    document.getElementById('math').value = ''
+    document.getElementById('phys').value = ''
+    document.getElementById('english').value = ''
 
 }
 
 const generateDOM = (sum, average) => {
+    document.getElementById('result').innerHTML = ''
     /* Creating a paragraph */
     const p = document.createElement('p')
     /* To get our result div */
